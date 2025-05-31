@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namste react by Bibhusita Behera",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibhusitabehera98/Namaste_React.git"
+  },
+  "author": "Bibhusita Behera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibhusitabehera98/Namaste_React/issues"
+  },
+  "homepage": "https://github.com/bibhusitabehera98/Namaste_React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
