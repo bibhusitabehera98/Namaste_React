@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is namste react by Bibhusita Behera",
   "scripts": {
+    "start": "parcel Episode1/index.html",
+    "build": "parcel build Episode1/index.html",
     "test": "jest"
   },
   "repository": {

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: bisque;
+  background-color: #00f;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.search-bar {
+  height: 50px;
+  padding: 3rem;
+  display: flex;
+}
+
+.search-bar input {
+  height: 100%;
+}
+
+.user-icon {
+  font-weight: 1rem;
+}
+/*# sourceMappingURL=Episode3.989d53c9.css.map */

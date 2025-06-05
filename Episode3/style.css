@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: blue;
+  color: bisque;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.search-bar {
+  display: flex;
+  height: 50px;
+  padding: 3rem;
+}
+
+.search-bar input {
+  height: 100%;
+}
+
+.search-button {
+  /* font-size: 1rem; */
+}
+
+.user-icon {
+  font-weight: 1rem;
+}
