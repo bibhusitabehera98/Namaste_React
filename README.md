@@ -18,3 +18,33 @@
 - Error Handling
 - HTTPs
 - Tree Shaking - remove unused code
+
+# Food Ordering App
+
+/\*\*
+
+- Header
+- - Logo
+- - Nav Items
+- Body
+- - Search Bar
+- - Resturant Container
+-      - Resturant Card
+-             - img
+-             - Name Of Restro
+-             - rating
+-             - cuision
+-             - delivery time
+- Footer
+- - Copyright
+- - Links
+- - Address
+- - Contact
+    \*/
+
+    # React Hooks
+
+    (Normal JS utility functions)
+
+    - useState()
+    - useEffect()

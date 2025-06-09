@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.header {
+  border: 3px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 100px 0 170px;
+  display: flex;
+}
+
+.nav-items ul {
+  display: flex;
+}
+
+.nav-items ul li {
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+.restro-card {
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.restro-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.restro-card:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 5px gray;
+}
+
+.filter-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ea1616;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.restro-logo {
+  aspect-ratio: auto;
+  border-radius: inherit;
+  width: 100%;
+  height: 50%;
+  padding-bottom: 5px;
+}
+
+.restro-card h3 {
+  padding: 5px;
+  font-weight: 700;
+}
+
+.rating {
+  gap: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.cusion {
+  padding: 10px;
+}
+/*# sourceMappingURL=Episode4.8000bb03.css.map */
