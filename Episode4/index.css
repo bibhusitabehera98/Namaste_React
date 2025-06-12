@@ -54,8 +54,15 @@
   /* border: 1px solid gray; */
 }
 
+.filter {
+  display: flex;
+  margin: 20px 10px 60px 10px;
+}
+
 .filter-btn {
-  padding: 15px;
+  width: 250px;
+
+  padding: 5px 15px;
   margin: 10px;
   border: none;
   border-radius: 5px;
@@ -87,4 +94,91 @@
 
 .cusion {
   padding: 10px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.shimmer-card {
+  width: 300px;
+  height: 320px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: flex;
+  flex-direction: column;
+  animation: shimmer 1.2s infinite linear;
+}
+
+.shimmer-img,
+.shimmer-title,
+.shimmer-text,
+.shimmer-subtext {
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #e0e0e0;
+}
+
+.shimmer-img {
+  height: 150px;
+  width: 90%;
+}
+
+.shimmer-title {
+  height: 20px;
+  width: 60%;
+}
+
+.shimmer-text {
+  height: 15px;
+  width: 80%;
+}
+
+.shimmer-subtext {
+  height: 15px;
+  width: 50%;
+}
+
+.search {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 1rem;
+}
+
+.search-box {
+  width: 250px;
+  /* height: 40px; */
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: rgb(250, 245, 240);
+}
+
+.search-btn {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(233, 23, 23);
+  color: #ffffff;
+  font-weight: 800;
 }
