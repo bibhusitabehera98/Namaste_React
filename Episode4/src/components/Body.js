@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import RestroCard from "./RestroCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   //state variable
@@ -15,15 +16,17 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/search/v3?lat=28.63270&lng=77.21980&str=resturant&trackingId=6e83aae7-34c8-99a6-1a15-ba92a2672203&submitAction=ENTER&queryUniqueId=ca11f1d9-f6a4-65e1-a928-efeb5583f688"
+      "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const jsonData = await data.json();
     console.log(jsonData);
     setListOfResturant(
-      jsonData?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
+      jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
     );
     setNewRestroList(
-      jsonData?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
+      jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
     );
   };
 
@@ -56,7 +59,7 @@ const Body = () => {
               //SearchText
 
               const filteredRestro = listOfResturant.filter((restro) =>
-                restro?.card?.card?.info?.name
+                restro?.info?.name
                   ?.toLowerCase()
                   ?.includes(searchText.toLowerCase())
               );
@@ -71,7 +74,7 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             filteredList = listOfResturant.filter(
-              (restro) => restro.rating > 4
+              (restro) => restro.avgRating > 4
             );
             setListOfResturant(filteredList);
           }}
@@ -81,7 +84,14 @@ const Body = () => {
       </div>
       <div className="restro-container">
         {newRestroList.map((restaurant) => (
-          <RestroCard key={restaurant.card.card.info.id} resData={restaurant} />
+          // <RestroCard key={restaurant.card.card.info.id} resData={restaurant} />
+          <Link
+            className="link"
+            to={"/restaurants/" + restaurant.info.id}
+            key={restaurant.info.id}
+          >
+            <RestroCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

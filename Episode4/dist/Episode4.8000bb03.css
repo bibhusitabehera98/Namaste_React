@@ -71,6 +71,7 @@
 
 .restro-logo {
   aspect-ratio: auto;
+  object-fit: cover;
   border-radius: inherit;
   width: 100%;
   height: 50%;
@@ -165,5 +166,81 @@
   border-radius: 5px;
   padding: 1rem;
   font-weight: 800;
+}
+
+.Menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 30px;
+  display: flex;
+}
+
+.rating-container {
+  background-color: #efeff0;
+  border-bottom-right-radius: 36px;
+  border-bottom-left-radius: 36px;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  height: 180px;
+  display: flex;
+}
+
+.rating-card {
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 15px;
+  gap: 2rem;
+  width: 93%;
+  padding: 10px;
+}
+
+.rating-card .rating {
+  padding-bottom: 1.3rem;
+}
+
+.cuisine {
+  color: #ff5200;
+  padding-bottom: 1.5rem;
+  padding-left: .5rem;
+  text-decoration: underline;
+}
+
+.menu-item {
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.menu-container {
+  gap: 10rem;
+  display: flex;
+}
+
+.menu-img {
+  align-items: flex-end;
+  width: 100px;
+  display: flex;
+}
+
+.menu-img img {
+  align-self: center;
+  width: 100%;
+}
+
+.menu-info {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
 }
 /*# sourceMappingURL=Episode4.8000bb03.css.map */

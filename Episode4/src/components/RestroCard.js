@@ -4,17 +4,15 @@ const RestroCard = ({ resData }) => {
     <div className="restro-card">
       <img
         className="restro-logo"
-        src={RESTRO_IMG + resData.card.card.info.cloudinaryImageId}
+        src={RESTRO_IMG + resData.info.cloudinaryImageId}
       />
-      <h3>{resData.card.card.info.name}</h3>
+      <h3>{resData.info.name}</h3>
       <div className="rating">
-        <h4>⭐ {resData.card.card.info.avgRating} </h4>
-        <h4>⏱️ {resData.card.card.info.sla.deliveryTime} mins</h4>
+        <h4>⭐ {resData.avgRating} </h4>
+        <h4>⏱️ {resData.info.sla.deliveryTime} mins</h4>
       </div>
-      <h4 className="cusion">{resData.card.card.info.cuisines.join(", ")}</h4>
-      <h4 className="cusion">
-        Cost For Two: {resData.card.card.info.costForTwo / 100} Rupees
-      </h4>
+      <h4 className="cusion">{resData.info.cuisines.join(", ")}</h4>
+      <h4 className="cusion">Cost For Two: {resData.info.costForTwo}</h4>
     </div>
   );
 };
