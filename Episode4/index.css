@@ -1,4 +1,6 @@
-* {
+@import "tailwindcss";
+
+/* * {
   margin: 0;
   padding: 0;
   font-family: monospace;
@@ -38,7 +40,7 @@
   height: auto;
   margin: 5px 10px;
   padding: 5px;
-  /* border: 1px solid black; */
+ 
   border-radius: 15px;
 }
 
@@ -51,7 +53,6 @@
 .restro-card:hover {
   box-shadow: 0 2px 5px gray;
   cursor: pointer;
-  /* border: 1px solid gray; */
 }
 
 .filter {
@@ -79,7 +80,7 @@
   object-fit: cover;
   border-radius: inherit;
   padding-bottom: 5px;
-  /* padding: 5px; */
+
 }
 
 .restro-card h3 {
@@ -97,68 +98,6 @@
   padding: 10px;
 }
 
-.shimmer-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -400px 0;
-  }
-  100% {
-    background-position: 400px 0;
-  }
-}
-
-.shimmer-card {
-  width: 300px;
-  height: 320px;
-  margin: 10px;
-  border-radius: 15px;
-  background: #f6f7f8;
-  background-image: linear-gradient(
-    to right,
-    #f6f7f8 0%,
-    #edeef1 20%,
-    #f6f7f8 40%,
-    #f6f7f8 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 800px 104px;
-  display: flex;
-  flex-direction: column;
-  animation: shimmer 1.2s infinite linear;
-}
-
-.shimmer-img,
-.shimmer-title,
-.shimmer-text,
-.shimmer-subtext {
-  border-radius: 5px;
-  margin: 10px;
-  background-color: #e0e0e0;
-}
-
-.shimmer-img {
-  height: 150px;
-  width: 90%;
-}
-
-.shimmer-title {
-  height: 20px;
-  width: 60%;
-}
-
-.shimmer-text {
-  height: 15px;
-  width: 80%;
-}
-
-.shimmer-subtext {
-  height: 15px;
-  width: 50%;
-}
 
 .search {
   display: flex;
@@ -168,7 +107,7 @@
 
 .search-box {
   width: 250px;
-  /* height: 40px; */
+
   padding: 5px;
   border: 2px solid gray;
   border-radius: 5px;
@@ -258,4 +197,75 @@
 .link {
   text-decoration: none;
   color: black;
+}
+
+.user-card {
+  box-shadow: 2px 2px 4px gray;
+  width: 400px;
+  margin: 15px 8px;
+  padding: 20px;
+  background-color: rgb(249, 215, 171);
+} */
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.shimmer-card {
+  width: 300px;
+  height: 320px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: flex;
+  flex-direction: column;
+  animation: shimmer 1.2s infinite linear;
+}
+
+.shimmer-img,
+.shimmer-title,
+.shimmer-text,
+.shimmer-subtext {
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #e0e0e0;
+}
+
+.shimmer-img {
+  height: 150px;
+  width: 90%;
+}
+
+.shimmer-title {
+  height: 20px;
+  width: 60%;
+}
+
+.shimmer-text {
+  height: 15px;
+  width: 80%;
+}
+
+.shimmer-subtext {
+  height: 15px;
+  width: 50%;
 }
